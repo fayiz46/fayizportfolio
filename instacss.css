@@ -1,16 +1,13 @@
 /* General Styles */
-body, html {
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: url('bg data analyst.jpg') no-repeat center center fixed;
+    background-size: cover;
     margin: 0;
     padding: 0;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #f06, #4a90e2);
-    animation: gradientAnimation 15s ease infinite;
-    background-size: 400% 400%;
 }
+
 
 @keyframes gradientAnimation {
     0% {
