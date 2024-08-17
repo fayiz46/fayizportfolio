@@ -1,37 +1,34 @@
+/* Basic Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body Styling */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
 }
 
+/* Header & Navigation */
 header {
     background-color: #333;
-    padding: 10px 0;
+    padding: 10px;
+    color: #fff;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
 }
 
 .menu-icon {
     display: none;
     cursor: pointer;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.menu-icon div {
-    width: 30px;
-    height: 3px;
-    background-color: #fff;
+    font-size: 24px;
+    padding: 5px;
 }
 
 ul {
@@ -51,6 +48,7 @@ ul li a:hover {
     border-radius: 5px;
 }
 
+/* Social Buttons */
 .social-buttons {
     display: flex;
     justify-content: center;
@@ -68,32 +66,31 @@ ul li a:hover {
     transform: scale(1.1);
 }
 
+/* Hero Section */
 .hero {
     background-color: #222;
     color: white;
-    padding: 50px 20px;
+    padding: 40px 20px;
     text-align: center;
 }
 
-.hero .container {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 20px;
+    align-items: center;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.hero .container .content {
-    max-width: 600px;
-}
-
-.hero .container .photo img {
+.photo img {
     width: 100%;
-    max-width: 200px;
+    max-width: 300px;
     border-radius: 10px;
+    margin: 0 auto;
 }
 
+/* Footer */
 footer {
     text-align: center;
     padding: 10px;
@@ -101,13 +98,15 @@ footer {
     color: white;
 }
 
-/* Media Queries */
+/* Responsive Design */
+
+/* Mobile First */
 @media (max-width: 768px) {
     .menu-icon {
-        display: flex;
+        display: block;
     }
 
-    ul {
+    #navbar {
         display: none;
         flex-direction: column;
         gap: 10px;
@@ -119,15 +118,38 @@ footer {
         width: 200px;
     }
 
-    ul.show {
+    #navbar.show {
         display: flex;
     }
 
-    .hero .container {
+    ul {
         flex-direction: column;
     }
 
-    .social-buttons {
-        gap: 10px;
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Larger Screens */
+@media (min-width: 768px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #navbar {
+        display: flex !important;
+        position: static;
+        background: none;
+        padding: 0;
+    }
+
+    .menu-icon {
+        display: none;
     }
 }
