@@ -3,48 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="css.css">
+    <title>Portfolio | Muhammed Fayiz K</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Add Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <!-- Header Section -->
     <header>
         <nav>
-            <div class="menu-icon" onclick="toggleMenu()">
-                &#9776; <!-- Hamburger icon -->
-            </div>
-            <ul id="navbar">
-                <li><a href="portfolio.html">Home</a></li>
-                <li><a href="about.html">Contact</a></li>
-                <li><a href="education.html">Education</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
+            <div class="logo">Muhammed Fayiz K</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="social-buttons">
-        <a href="https://www.linkedin.com/in/muhammedfayiz1" target="_blank" title="LinkedIn"><img src="message.png" alt="LinkedIn"></a>
-        <a href="https://github.com/fayiz46" target="_blank" title="GitHub"><img src="github.png" alt="GitHub"></a>
-        <a href="insta.html" target="_blank" title="Instagram"><img src="instagram.png" alt="Instagram"></a>
-        <a href="https://www.facebook.com/yourprofile" target="_blank" title="Facebook"><img src="facebook-app-symbol.png" alt="Facebook"></a>
-    </div>
-
     <section class="hero" id="home">
-        <div class="container">
-            <div class="content">
-                <h1>MUHAMMED FAYIZ K</h1>
-                <p>Data Scientist with a strong foundation in statistics, machine learning, and data analysis...</p>
+        <div class="hero-content">
+            <div class="hero-photo-box">
+                <img src="fayiz.png" alt="Muhammed Fayiz K">
             </div>
-            <div class="photo">
-                <img src="bgremoved.png" alt="Your Photo">
+            <h1>I'm Muhammed Fayiz K</h1>
+            <p>Data Scientist | AI Enthusiast | Problem Solver</p>
+            <a href="#about" class="cta">Know More</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <p>I am a Data Scientist with a strong foundation in statistics, 
+            machine learning, and data analysis.
+            Proficient in Python, R, SQL, and data visualization 
+            tools like Tableau and Power BI. Adept at cleaning, 
+            organizing, and analyzing large datasets to extract actionable insights. 
+            Passionate about leveraging data to drive business decisions and solve
+            complex problems.</p>
+        <div class="skills">
+            <h3>Skills</h3>
+            <div class="skills-grid">
+                <div class="skill"><img src="images/python.png" alt="Python"><p>Python</p></div>
+                <div class="skill"><img src="images/powerbi.png" alt="Power BI"><p>Power BI</p></div>
+                <!-- Add more skills as needed -->
             </div>
         </div>
     </section>
 
-    <script src="script.js"></script>
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <h2>My Work</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="images/project1.jpg" alt="Project 1">
+                <div class="overlay">
+                    <h3>Project Title</h3>
+                    <p>Project Description</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="images/project2.jpg" alt="Project 2">
+                <div class="overlay">
+                    <h3>Project Title</h3>
+                    <p>Project Description</p>
+                </div>
+            </div>
+            <!-- Add more portfolio items as needed -->
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <h2>Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h4>Senior Data Scientist</h4>
+                <p>Company Name | 2022 - Present</p>
+                <p>Leading data science initiatives, building predictive models, and generating actionable insights...</p>
+            </div>
+            <div class="timeline-item">
+                <h4>Data Scientist</h4>
+                <p>Company Name | 2020 - 2022</p>
+                <p>Worked on innovative solutions in machine learning and AI...</p>
+            </div>
+            <!-- Add more experiences as needed -->
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <h2>What People Say</h2>
+        <div class="testimonial">
+            <img src="images/testimonial-person.jpg" alt="Person">
+            <p>"Fayiz's analytical skills and problem-solving capabilities are unmatched. A valuable asset to any team!"</p>
+            <p>- Client Name</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Get in Touch</h2>
+        <p>If you're interested in collaborating or have any opportunities, feel free to reach out.</p>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/muhammedfayiz1" target="_blank">muhammedfayiz1</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
         <p>&copy; 2024 Muhammed Fayiz K. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://github.com/fayiz46" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/muhammedfayiz1" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
     </footer>
+
+    <!-- Custom JS for Animations and Interactions -->
+    <script src="script.js"></script>
 </body>
 </html>
