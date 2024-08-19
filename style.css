@@ -243,7 +243,7 @@ header nav ul li a:hover {
     color: #ccc;
 }
 
-/* Experience Section */
+/* Experience Section
 .experience {
     padding: 80px 20px;
     background-color: #121212;
@@ -289,9 +289,9 @@ header nav ul li a:hover {
 .timeline-item p {
     font-size: 1rem;
     color: #ccc;
-}
+} */
 
-/* Testimonials Section */
+/* Testimonials Section 
 .testimonials {
     padding: 80px 20px;
     background-color: #1a1a1a;
@@ -322,7 +322,7 @@ header nav ul li a:hover {
 .testimonial p {
     font-size: 1.1rem;
     color: #ccc;
-}
+}*/
 
 /* Contact Section */
 .contact {
