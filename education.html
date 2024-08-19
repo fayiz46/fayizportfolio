@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .info-section {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .info-section h2 {
+            color: #007bff;
+        }
+        .info-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .info-section li {
+            margin-bottom: 10px;
+        }
+        .certification-content {
+        display: flex;
+        align-items: flex-start; /* Align items at the start */
+        }
+
+        .certification-content ul {
+        flex: 1; /* Take up remaining space */
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        } 
+
+        .certificate-photo {
+        width: 200px; /* Adjust size as needed */
+        height: auto; /* Maintain aspect ratio */
+        margin-left: 20px; /* Space between text and photo */
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5); /* Shadow effect */
+        transition: transform 0.1s, box-shadow 0.3s; /* Transitions */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Education & Certifications</h1>
+
+        <div class="info-section">
+            <h2>Certifications</h2>
+            <ul>
+                <li><strong>Certification Name:</strong> Certification in Data Science and Machine Learning</li>
+                <li><strong>Issuing Organization:</strong> Center for Continuing Education IIT-Mandi and NSDC </li>
+                <li><strong>Date:</strong> Dec 22 - May 23</li>
+                <!-- Add more certifications as needed -->
+            </ul>
+            <img src="images/iit.jpg" alt="Certificate Photo" class="certificate-photo">
+        </div>
+
+        <div class="info-section">
+            <h2>Higher Education</h2>
+            <ul>
+                <li><strong>Degree:</strong> BSC</li>
+                <li><strong>Field of Study:</strong> Computer Science</li>
+                <li><strong>University:</strong> Calicut University</li>
+                <li><strong>Year of Graduation:</strong> 2022</li>
+            </ul>
+            <img src="images/degree.jpg" alt="Certificate Photo" class="certificate-photo">
+        </div>
+
+        <div class="info-section">
+            <h2>12th Grade Information</h2>
+            <ul>
+                <li><strong>Board:</strong> Bord Of Higher Secondary Education Kerala</li>
+                <li><strong>School:</strong> CKG HSS Chingapuram,Kozhikode</li>
+                <li><strong>Year of Passing:</strong> MAR 2018</li>
+                <li><strong>Major Subjects:</strong> Computer Science, Mathematics</li>
+            </ul>
+            <img src="images/12th.jpg" alt="Certificate Photo" class="certificate-photo">
+        </div>
+    </div>
+</body>
+</html>
